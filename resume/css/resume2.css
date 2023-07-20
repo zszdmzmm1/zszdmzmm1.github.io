@@ -104,7 +104,6 @@ body {
     margin-bottom: 0;
 }
 
-.section__list-item,
 .details .skills__item {
     display: flex;
     justify-content: space-between;
