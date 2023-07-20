@@ -48,6 +48,15 @@ div.topleft:hover, li:hover{
     border-bottom: 2px solid rgb(113, 228, 190);
 }
 
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(113, 228, 190);
+}
+
 img{
     height: 100px;
 }
