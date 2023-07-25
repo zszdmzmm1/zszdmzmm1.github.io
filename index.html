@@ -1,36 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>zszdmzmm的个人网站</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="topleft">个人网站</div>
-            <div class="topright">
-                <ul>
-                    <li><a href="./resume/resume2.html">简历</a></li>
-                    <li>工作经验</li>
-                    <li>项目经验</li>
-                </ul>
-            </div>
+    <div class="container pb-2">
+        <header class="mb-5">
+            <!--            导航栏-->
+            <nav class="navbar navbar-expand-sm bg-body-tertiary mb-5 shadow">
+                <div class="container-fluid">
+                    <img src="./image/QQ图片20230720103937.jpg" alt="头像" height="40" class="navbar-brand">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <i class="bi bi-box py-2 nav-item"></i>
+                            <a class="me-3 py-2 link-body-emphasis text-decoration-none nav-link" href="./resume/resume2.html">简历</a>
+                            <i class="bi bi-journal-text py-2 nav-item"></i>
+                            <a class="me-3 py-2 link-body-emphasis text-decoration-none nav-link" href="#">博客</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <h1 class="display-3 text-center fw-medium">zszdmzmm的个人网站</h1>
+            <p class="text-body-secondary text-center">用简短的一句话描述你的网站</p>
         </header>
-        <main>
-            <div class="photo"><img src="./image/QQ图片20230720103937.jpg" alt=""></div>
-            <div class="aside">
-                <h2>头像</h2>
-                <p>以屏幕为画板，以HTML + CSS + JS为画笔，自由描绘自己的想象。</p>
+        <main class="px-5">
+            <div class="row mb-5">
+                <div class="col-md-6 col-12 align-self-center">
+                    <h1 class="text-md-start text-center">简历</h1>
+                    <p class="text-body-secondary text-md-start text-center">用简短的一句话介绍简历</p>
+                </div>
+                <img src="./image/Snipaste_2023-07-25_10-54-27.png" alt="简历" class="col-12 col-md-6 border rounded-4 shadow">
+            </div>
+            <div class="row mb-5 d-md-flex flex-row-reverse">
+                <div class="col-md-6 col-12 align-self-center">
+                    <h1 class="text-md-end text-center">博客</h1>
+                    <p class="text-body-secondary text-md-end text-center">用简短的一句话介绍博客</p>
+                </div>
+                <img src="./image/Snipaste_2023-07-25_10-54-27.png" alt="博客" class="col-12 col-md-6 border rounded-4 shadow">
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-6 col-12 align-self-center">
+                    <h1 class="text-md-start text-center">模块X</h1>
+                    <p class="text-body-secondary text-md-start text-center">用简短的一句话介绍模块X</p>
+                </div>
+                <img src="./image/Snipaste_2023-07-25_10-54-27.png" alt="模块X" class="col-12 col-md-6 border rounded-4 shadow">
+            </div>
+            <div class="row mb-5 d-md-flex flex-row-reverse">
+                <div class="col-md-6 col-12 align-self-center">
+                    <h1 class="text-md-end text-center">模块Y</h1>
+                    <p class="text-body-secondary text-md-end text-center">用简短的一句话介绍模块Y</p>
+                </div>
+                <img src="./image/Snipaste_2023-07-25_10-54-27.png" alt="模块Y" class="col-12 col-md-6 border rounded-4 shadow">
             </div>
         </main>
-        <footer>
-            <p class="f_title">我最喜欢的一句话</p>
-            <div>
-                <p class="sentence">书山有路勤为径，学海无涯苦作舟。</p>
-                <p class="s_by">- 韩愈</p>
-            </div>
+        <footer class="mt-5 border-top text-center p-3">
+            <p class="d-inline text-body-secondary">Designed by</p>
+            <p class="d-inline fw-bold">@zszdmzmm</p>
+            <p class="d-inline text-body-secondary">-From X to Z</p>
         </footer>
     </div>
 </body>
