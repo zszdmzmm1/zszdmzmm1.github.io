@@ -23,14 +23,35 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
                             <i class="bi bi-box py-2 nav-item"></i>
-                            <a class="me-3 py-2 link-body-emphasis text-decoration-none nav-link" href="./resume/resume2.html">简历</a>
+                            <a class="me-3 py-2 link-body-emphasis text-decoration-none nav-link"
+                               href="./resume/resume2.html">简历</a>
                             <i class="bi bi-journal-text py-2 nav-item"></i>
                             <a class="me-3 py-2 link-body-emphasis text-decoration-none nav-link" href="#">博客</a>
+                            <i class="bi bi-github py-2 nav-item"></i>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle me-3 py-2 text-decoration-none link-body-emphasis" href="https://github.com/zszdmzmm1" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false" onmouseenter="dropDownMenuShow()" onmouseleave="dropDownMenuHidden()">
+                                    GitHub
+                                </a>
+                                <ul id="dropdown" class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="https://github.com/zszdmzmm1">个人主页</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://github.com/zszdmzmm1/learnning">Java仓库</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                           href="https://github.com/zszdmzmm1/zszdmzmm-web">Web仓库</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </nav>
-            <h1 class="display-3 text-center fw-medium animate__animated animate__fadeIn animate__slower">zszdmzmm的个人网站</h1>
+            <h1 class="display-3 text-center fw-medium animate__animated animate__fadeIn animate__slower">
+                zszdmzmm的个人网站</h1>
             <p class="text-body-secondary text-center">用简短的一句话描述你的网站</p>
         </header>
         <main class="w-75 p-lg-5 m-auto m-3">
@@ -39,28 +60,32 @@
                     <h1 class="text-md-start text-center">简历</h1>
                     <p class="text-body-secondary text-md-start text-center">用简短的一句话介绍简历</p>
                 </div>
-                <img src="./image/Snipaste_2023-07-25_10-54-27.png" alt="简历" class="col-12 col-md-6 border rounded-4 shadow">
+                <img src="./image/Snipaste_2023-07-25_10-54-27.png" alt="简历"
+                     class="col-12 col-md-6 border rounded-4 shadow">
             </div>
             <div class="row mb-5 d-md-flex flex-row-reverse">
                 <div class="col-md-6 col-12 align-self-center">
                     <h1 class="text-md-end text-center">博客</h1>
                     <p class="text-body-secondary text-md-end text-center">用简短的一句话介绍博客</p>
                 </div>
-                <img src="./image/Snipaste_2023-07-25_10-54-27.png" alt="博客" class="col-12 col-md-6 border rounded-4 shadow">
+                <img src="./image/Snipaste_2023-07-25_10-54-27.png" alt="博客"
+                     class="col-12 col-md-6 border rounded-4 shadow">
             </div>
             <div class="row mb-5">
                 <div class="col-md-6 col-12 align-self-center">
                     <h1 class="text-md-start text-center">模块X</h1>
                     <p class="text-body-secondary text-md-start text-center">用简短的一句话介绍模块X</p>
                 </div>
-                <img src="./image/Snipaste_2023-07-25_10-54-27.png" alt="模块X" class="col-12 col-md-6 border rounded-4 shadow">
+                <img src="./image/Snipaste_2023-07-25_10-54-27.png" alt="模块X"
+                     class="col-12 col-md-6 border rounded-4 shadow">
             </div>
             <div class="row mb-5 d-md-flex flex-row-reverse">
                 <div class="col-md-6 col-12 align-self-center">
                     <h1 class="text-md-end text-center">模块Y</h1>
                     <p class="text-body-secondary text-md-end text-center">用简短的一句话介绍模块Y</p>
                 </div>
-                <img src="./image/Snipaste_2023-07-25_10-54-27.png" alt="模块Y" class="col-12 col-md-6 border rounded-4 shadow">
+                <img src="./image/Snipaste_2023-07-25_10-54-27.png" alt="模块Y"
+                     class="col-12 col-md-6 border rounded-4 shadow">
             </div>
         </main>
         <footer class="mt-5 border-top text-center p-3">
@@ -69,5 +94,13 @@
             <p class="d-inline text-body-secondary">-From X to Z</p>
         </footer>
     </div>
+    <script>
+        function dropDownMenuShow(){
+            document.getElementById("dropdown").setAttribute("class", "dropdown-menu show");
+        }
+        function dropDownMenuHidden(){
+            document.getElementById("dropdown").setAttribute("class", "dropdown-menu");
+        }
+    </script>
 </body>
 </html>
