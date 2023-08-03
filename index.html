@@ -28,8 +28,10 @@
                             <i class="bi bi-journal-text py-2 nav-item"></i>
                             <a class="me-3 py-2 link-body-emphasis text-decoration-none nav-link" href="#">博客</a>
                             <i class="bi bi-github py-2 nav-item"></i>
-                            <div class="nav-item dropdown" onmouseleave="dropDownMenuHidden()" onmouseenter="dropDownMenuShow()">
-                                <a class="nav-link dropdown-toggle me-3 py-2 text-decoration-none link-body-emphasis" href="https://github.com/zszdmzmm1" role="button"
+                            <div class="nav-item dropdown" onmouseleave="dropDownMenuHidden()"
+                                 onmouseenter="dropDownMenuShow()">
+                                <a class="nav-link dropdown-toggle me-3 py-2 text-decoration-none link-body-emphasis"
+                                   href="https://github.com/zszdmzmm1" role="button"
                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     GitHub
                                 </a>
@@ -40,7 +42,8 @@
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="https://github.com/zszdmzmm1/learnning">Java仓库</a>
+                                    <li><a class="dropdown-item"
+                                           href="https://github.com/zszdmzmm1/learnning">Java仓库</a>
                                     </li>
                                     <li><a class="dropdown-item"
                                            href="https://github.com/zszdmzmm1/zszdmzmm-web">Web仓库</a></li>
@@ -48,6 +51,9 @@
                             </div>
                         </div>
                     </div>
+                    <button class="btn btn-outline-danger nav-item">
+                        <a href="./page/login.html" class="nav-link">登录</a>
+                    </button>
                 </div>
             </nav>
             <h1 class="display-3 text-center fw-medium animate__animated animate__fadeIn animate__slower">
@@ -95,10 +101,11 @@
         </footer>
     </div>
     <script>
-        function dropDownMenuShow(){
+        function dropDownMenuShow() {
             document.getElementById("dropdown").setAttribute("class", "dropdown-menu show");
         }
-        function dropDownMenuHidden(){
+
+        function dropDownMenuHidden() {
             document.getElementById("dropdown").setAttribute("class", "dropdown-menu");
         }
     </script>
