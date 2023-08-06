@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>文章列表</title>
+    <title></title>
     <link rel="stylesheet" href="../build/assets/app.css">
 </head>
 <body>
@@ -55,8 +55,10 @@
             </nav>
         </header>
         <main class="container">
-            <div class="row vh-100">
+            <div class="row">
                 <div class="col-8">
+                    <h1 class="display-1">国内执行npm指令</h1>
+                    <div class="mb-5">作者：</div>
                     <nav data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" tabindex="0">
                         <div id="item-1">
                             <h3>为什么慢</h3>
@@ -85,7 +87,7 @@
                         </div>
                         <div id="item-2-3-1">
                             <h5>安装 nrm</h5>
-                            <p>npm install -g nrm</p>
+                            <p>npm install -g npm</p>
                         </div>
                         <div id="item-2-3-2">
                             <h5>列出当前可用的所有镜像源</h5>
@@ -112,19 +114,21 @@
                     <nav id="navbar-example3" class="flex-column align-items-stretch ps-4 border-start position-sticky top-0">
                         <nav id="toc" class="nav nav-pills flex-column"></nav>
                     </nav>
-                    </nav>
-                    </nav>
                 </div>
             </div>
         </main>
+        <footer class="mt-5 border-top text-center p-3">
+            <p class="d-inline text-body-secondary">Designed by</p>
+            <p class="d-inline fw-bold">@zszdmzmm</p>
+            <p class="d-inline text-body-secondary">-From X to Z</p>
+        </footer>
         <script src="../build/assets/app.js"></script>
         <script>
-            const titleElement = $("h3, h4, h5");
+            const titleElement = $("H3, H4, H5");
             let HTML = ""
             titleElement.each(function (){
                 if($(this).prop("tagName") === "H3"){
                     HTML += `<a class="nav-link ps-1" href=#${$(this).parent().attr("id")}>${$(this).text()}</a>`
-                    console.log(HTML);
                 }else if($(this).prop("tagName") === "H4"){
                     HTML += `<a class="nav-link ps-3" href=#${$(this).parent().attr("id")}>${$(this).text()}</a>`
                 }else{
