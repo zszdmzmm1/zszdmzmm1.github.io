@@ -14,7 +14,10 @@
             <!--            导航栏-->
             <nav class="navbar navbar-expand-sm bg-body-tertiary mb-5 shadow">
                 <div class="container-fluid">
-                    <img src="../image/QQ图片20230720103937.jpg" alt="头像" height="40" class="navbar-brand">
+                    <div class="navbar-brand">
+                        <img src="../image/QQ图片20230720103937.jpg" alt="头像" height="40" >
+                        <a href="../index.html" class="link-body-emphasis text-body-secondary text-decoration-none">我的主页</a>
+                    </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -59,29 +62,29 @@
                 <div class="card-header">注册</div>
                 <div class="card-body">
                     <div class="row mb-2 w-75 mx-auto mb-4">
-                        <label class="col-form-label col-3 col-xl-2 text-end" for="user">用户名</label>
-                        <div class="col-9 col-xl-10 position-relative">
+                        <label class="col-form-label col-lg-3 col-xxl-2 text-lg-end text-start" for="user">用户名</label>
+                        <div class="col-lg-9 col-xxl-10 position-relative">
                             <input class="form-control" type="text" id="user" required>
                             <div class="invalid-tooltip">请输入长度4到16的用户名！</div>
                         </div>
 
                     </div>
                     <div class="row mb-2 w-75 mx-auto mb-4">
-                        <label class="col-form-label col-3 col-xl-2 text-end" for="email">邮箱</label>
-                        <div class="col-9 col-xl-10">
+                        <label class="col-form-label col-lg-3 col-xxl-2 text-lg-end text-start" for="email">邮箱</label>
+                        <div class="col-lg-9 col-xxl-10">
                             <input class="form-control" type="email" id="email" required>
                         </div>
                     </div>
                     <div class="row mb-2 w-75 mx-auto mb-4">
-                        <label class="col-form-label col-3 col-xl-2 text-end" for="password">密码</label>
-                        <div class="col-9 col-xl-10 position-relative">
+                        <label class="col-form-label col-lg-3 col-xxl-2 text-lg-end text-start" for="password">密码</label>
+                        <div class="col-lg-9 col-xxl-10 position-relative">
                             <input class="form-control " type="password" id="password" required>
                             <div class="invalid-tooltip">请输入长度4到16的密码！</div>
                         </div>
                     </div>
                     <div class="row w-75 mx-auto">
-                        <span class="col-3 col-xl-2"></span>
-                        <div class="col-9 col-xl-10 position-relative">
+                        <span class="col-lg-3 col-xxl-2"></span>
+                        <div class="col-lg-9 col-xxl-10 position-relative">
                             <button id="register" type="button" class="btn btn-danger me-4 mb-1 d-block d-xl-inline">
                                 注册
                             </button>
