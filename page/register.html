@@ -15,8 +15,9 @@
             <nav class="navbar navbar-expand-sm bg-body-tertiary mb-5 shadow">
                 <div class="container-fluid">
                     <div class="navbar-brand">
-                        <img src="../image/QQ图片20230720103937.jpg" alt="头像" height="40" >
-                        <a href="../index.html" class="link-body-emphasis text-body-secondary text-decoration-none">我的主页</a>
+                        <img src="../image/QQ图片20230720103937.jpg" alt="头像" height="40">
+                        <a href="../index.html"
+                           class="link-body-emphasis text-body-secondary text-decoration-none">我的主页</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
@@ -32,7 +33,8 @@
                             </div>
                             <div class="d-flex">
                                 <i class="bi bi-journal-text py-2 nav-item me-1"></i>
-                                <a class="me-3 py-2 link-body-emphasis text-decoration-none nav-link" href="./page/article.html">博客</a>
+                                <a class="me-3 py-2 link-body-emphasis text-decoration-none nav-link"
+                                   href="./page/article.html">博客</a>
                             </div>
                             <div class="d-flex">
                                 <i class="bi bi-github py-2 nav-item me-1"></i>
@@ -56,6 +58,9 @@
                                         <li><a class="dropdown-item"
                                                href="https://github.com/zszdmzmm1/zszdmzmm-web">Web仓库</a>
                                         </li>
+                                        <li><a class="dropdown-item"
+                                               href="https://zszdmzmm1.github.io/bilibili-plugin/">bilibili插件介绍页</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -70,7 +75,8 @@
                 <div class="card-header">注册</div>
                 <div class="card-body">
                     <div class="row mb-2 w-75 mx-auto mb-4">
-                        <label class="col-form-label col-lg-3 col-xxl-2 text-lg-end text-start" for="user">用户名</label>
+                        <label class="col-form-label col-lg-3 col-xxl-2 text-lg-end text-start"
+                               for="user">用户名</label>
                         <div class="col-lg-9 col-xxl-10 position-relative">
                             <input class="form-control" type="text" id="user" required>
                             <div class="invalid-tooltip">请输入长度4到16的用户名！</div>
@@ -84,7 +90,8 @@
                         </div>
                     </div>
                     <div class="row mb-2 w-75 mx-auto mb-4">
-                        <label class="col-form-label col-lg-3 col-xxl-2 text-lg-end text-start" for="password">密码</label>
+                        <label class="col-form-label col-lg-3 col-xxl-2 text-lg-end text-start"
+                               for="password">密码</label>
                         <div class="col-lg-9 col-xxl-10 position-relative">
                             <input class="form-control " type="password" id="password" required>
                             <div class="invalid-tooltip">请输入长度4到16的密码！</div>
@@ -112,37 +119,38 @@
         <script>
             let passwordElement = $("#password");
             let userElement = $("#user");
+
             //
 
-            function check(value){
+            function check(value) {
                 var len = value.val().trim().length;
                 if (len <= 4 || len >= 16) {
-                    if(!value.hasClass("is-invalid")){
+                    if (!value.hasClass("is-invalid")) {
                         value.toggleClass("is-invalid")
                     }
                     return false;
                 } else {
-                    if(value.hasClass("is-invalid")){
+                    if (value.hasClass("is-invalid")) {
                         value.toggleClass("is-invalid")
                     }
                     return true;
                 }
             }
 
-            userElement.on("blur", function (){
+            userElement.on("blur", function () {
                 check($(this));
             })
 
-            passwordElement.on("blur", function (){
+            passwordElement.on("blur", function () {
                 check($(this));
             })
 
 
-            $("#register").on("click", function (){
-                if(check(userElement) && check(passwordElement)){
+            $("#register").on("click", function () {
+                if (check(userElement) && check(passwordElement)) {
                     $(this).prop("type", "submit");
-                }else{
-                    if(!$(this).hasClass("is-invalid")){
+                } else {
+                    if (!$(this).hasClass("is-invalid")) {
                         $(this).toggleClass("is-invalid");
                     }
                     $(this).prop("type", "button");
